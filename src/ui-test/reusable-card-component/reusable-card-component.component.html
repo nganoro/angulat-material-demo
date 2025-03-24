@@ -1,0 +1,81 @@
+<mat-dialog-content>
+    <mat-card>
+        <mat-card-header>
+          <mat-card-title>Card Title</mat-card-title>
+        </mat-card-header>
+          
+        <div class="example-section-container">
+          <section class="example-section">
+            <span class="example-list-section">
+              <mat-checkbox
+                  class="example-margin"
+                  [checked]="myTask().completed"
+                  [indeterminate]="partiallyComplete()"
+                  (change)="update($event.checked)"
+              >
+                  {{myTask().name}}
+              </mat-checkbox>
+            </span>
+            <span class="example-list-section">
+              <ul>
+                  @for (subtask of myTask().subtasks; track subtask; let i = $index) {
+                  <li>
+                      <mat-checkbox [checked]="subtask.completed" (change)="update($event.checked, i)">
+                      {{subtask.name}}
+                      </mat-checkbox>
+                  </li>
+                  }
+              </ul>
+            </span>
+          </section>
+  
+          <section class="example-section">
+            <span class="example-list-section">
+              <mat-checkbox
+                  class="example-margin"
+                  [checked]="myTask().completed"
+                  [indeterminate]="partiallyComplete()"
+                  (change)="update($event.checked)"
+              >
+                  {{myTask().name}}
+              </mat-checkbox>
+            </span>
+            <span class="example-list-section">
+              <ul>
+                  @for (subtask of myTask().subtasks; track subtask; let i = $index) {
+                  <li>
+                      <mat-checkbox [checked]="subtask.completed" (change)="update($event.checked, i)">
+                      {{subtask.name}}
+                      </mat-checkbox>
+                  </li>
+                  }
+              </ul>
+            </span>
+          </section>
+  
+          <section class="example-section">
+            <span class="example-list-section">
+              <mat-checkbox
+                  class="example-margin"
+                  [checked]="myTask().completed"
+                  [indeterminate]="partiallyComplete()"
+                  (change)="update($event.checked)"
+              >
+                  {{myTask().name}}
+              </mat-checkbox>
+            </span>
+            <span class="example-list-section">
+              <ul>
+                  @for (subtask of myTask().subtasks; track subtask; let i = $index) {
+                  <li>
+                      <mat-checkbox [checked]="subtask.completed" (change)="update($event.checked, i)">
+                      {{subtask.name}}
+                      </mat-checkbox>
+                  </li>
+                  }
+              </ul>
+            </span>
+          </section>
+        </div>
+    </mat-card>
+  </mat-dialog-content>

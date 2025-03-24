@@ -1,0 +1,32 @@
+mat-card {
+    padding: 16px;
+    width: 100%;
+  }
+  
+  mat-card-header {
+    background-color: rgba(0, 0, 0, 0.779);
+    padding: 16px;
+  }
+  
+  mat-card-title {
+    color: white;
+    text-decoration: underline;
+  }
+
+  mat-dialog-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .example-section-container {
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .example-section {
+    padding: 16px;
+    border-radius: 8px;;
+  }
+  
